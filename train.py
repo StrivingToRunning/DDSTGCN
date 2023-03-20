@@ -43,7 +43,8 @@ def main():
     setup_seed(args.seed)
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-    os.environ["CUDA_VISIBLE_DEVICES"] = args.device
+    os.environ["CUDA_VISIBLE_DEVICES"]="0"
+
 
     adj_mx = util.load_adj(args.adjdata)
     supports = [torch.tensor(i).cuda() for i in adj_mx]
