@@ -9,7 +9,7 @@ from engine import trainer
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--device', type=str, default='cpu', help='')
+parser.add_argument('--device', type=str, default='3', help='')
 parser.add_argument('--data',type=str,default='/kaggle/input/metr-la/METR-LA',help='data path')
 parser.add_argument('--adjdata',type=str,default='/kaggle/input/metr-la/METR-LA/adj_mx.pkl',help='adj data path')
 parser.add_argument('--seq_length',type=int,default=12,help='prediction length')
