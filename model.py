@@ -385,6 +385,7 @@ class ddstgcn(nn.Module):
             x = x + residual[:, :, :, -x.size(3):]
             x = self.bn[i](x)
             s = x
+
             s = self.skip_convs[i](s)
             try:
                 skip = skip[:, :, :, -s.size(3):]

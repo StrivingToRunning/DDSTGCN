@@ -1,8 +1,8 @@
 {
-  "PEMSD4": {
-    "data_dir": "data/PEMSD4",
-    "num_nodes": 304,
-    "num_slots": 288,
+  "METR-LA": {
+    "data_dir": "/kaggle/input/metr-la/METR-LA",
+    "num_nodes": 207,
+    "num_slots": 34272,
     "normalization": "batch"
   },
   "PEMSD8": {
