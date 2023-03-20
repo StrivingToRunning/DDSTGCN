@@ -40,6 +40,7 @@ def setup_seed(seed):
 
 
 def main():
+    torch.cuda.empty_cache()
     setup_seed(args.seed)
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
