@@ -9,7 +9,7 @@ from engine import trainer
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--device',type=str,default='cuda:0',help='graphics card')
+parser.add_argument('--device', type=str, default='cpu', help='')
 parser.add_argument('--data',type=str,default='data/METR-LA',help='data path')
 parser.add_argument('--adjdata',type=str,default='data/METR-LA/adj_mx.pkl',help='adj data path')
 parser.add_argument('--seq_length',type=int,default=12,help='prediction length')
